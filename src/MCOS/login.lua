@@ -1,3 +1,10 @@
+
+f = fs.open("/MCOS/.pass","r")
+m = f.readAll()
+
+if m == nil then
+ shell.run("/MCOS/desktop")
+else
 os.loadAPI("/MCOS/sha256")
 os.loadAPI("/apis/graphix")
 graphix.bgColor(colors.blue)
@@ -13,3 +20,5 @@ if main == m then
 else
   shell.run("/MCOS/login")
 end
+end
+
