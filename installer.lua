@@ -53,7 +53,7 @@ f.close()
 first = http.get("https://github.com/MCFunRide/MCOS-Beta-2/raw/master/src/welcome.lua").readAll()
 
 f = fs.open("/startup","w")
-)
+
 f.writeLine(first)
 f.close()
 term.clearLine()
