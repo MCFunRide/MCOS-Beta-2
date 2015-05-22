@@ -1,0 +1,5 @@
+os.loadAPI("/apis/graphix")
+graphix.bgColor(colors.red)
+graphix.center(7,"Work In Progress!")
+sleep(3)
+shell.run("/MCOS/desktop")
