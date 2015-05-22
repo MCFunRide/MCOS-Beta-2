@@ -1,4 +1,4 @@
-- SHA256 API by GravityScore
+-- SHA256 API by GravityScore
 
 
 
