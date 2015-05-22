@@ -52,7 +52,7 @@ f = fs.open("/MCOS/login","w")
 f.writeLine(login)
 f.close()
 write("                 ")
-first = http.get("https://github.com/MCFunRide/MCOS-Beta-2/raw/master/src/welcome.lua").readAll*(
+first = http.get("https://github.com/MCFunRide/MCOS-Beta-2/raw/master/src/welcome.lua").readAll()
 f = fs.open("/startup","w")
 f.write(first)
 f.close()
