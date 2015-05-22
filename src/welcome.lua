@@ -19,7 +19,11 @@ if y == 5 then
  graphix.center(1,"MCOS Beta "..version..": Password")
  graphix.center(3,"Input a password (leave blank for no password)")
  graphix.centerWrite(5,"Password: ")
- pass = read()
+ pass = read('*')
+ graphix.centerWrite(6,"Repeat Password: ")
+ repeat = read('*')
+ if pass == repeat then
+  
  os.loadAPI("/MCOS/sha256")
  main = sha256.sha256(pass)
  f = fs.open("/MCOS/.pass","w")
@@ -33,4 +37,6 @@ if y == 5 then
  fs.delete("/startup")
  shell.run("rename .startup startup")
  os.reboot()
+else
+ return
 end
