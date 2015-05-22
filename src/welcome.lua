@@ -17,7 +17,7 @@ local evt, button, x, y = os.pullEvent("mouse_click")
 if y == 5 then
  graphix.bgColor(colors.lightBlue)
  graphix.center(1,"MCOS Beta "..version..": Password")
- graphix.center(3,"Please type in a password (leave blank for no password)")
+ graphix.center(3,"Input a password (leave blank for no password)")
  graphix.centerWrite(5,"Password: ")
  pass = read()
  os.loadAPI("/MCOS/sha256")
