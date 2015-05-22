@@ -1,6 +1,7 @@
-
+if fs.exists("/MCOS/.pass") then
 f = fs.open("/MCOS/.pass","r")
 m = f.readAll()
+
 
 if m == " " then
  shell.run("/MCOS/desktop")
@@ -20,5 +21,8 @@ if main == m then
 else
   shell.run("/MCOS/login")
 end
+end
+else
+shell.run("/MCOS/desktop")
 end
 
