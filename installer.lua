@@ -58,3 +58,4 @@ term.clearLine()
 sleep(5)
 fs.delete("/.install")
 os.reboot()
+ 
