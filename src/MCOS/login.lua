@@ -2,7 +2,7 @@
 f = fs.open("/MCOS/.pass","r")
 m = f.readAll()
 
-if m == nil then
+if m == " " then
  shell.run("/MCOS/desktop")
 else
 os.loadAPI("/MCOS/sha256")
