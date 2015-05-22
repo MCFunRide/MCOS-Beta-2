@@ -17,6 +17,7 @@ graphix.center(7,"Games")
 graphix.center(9,"Power (i)")
 graphix.center(11,"Shell")
 graphix.center(13,"Information")
+graphix.center(15,"Settings")
  
 while true do
  
@@ -34,6 +35,8 @@ while true do
     shell.run("/MCOS/shell")
   elseif y == 13 then
     shell.run("/MCOS/about")
+  elseif y == 15 then
+    shell.run("/MCOS/settings")
   else
     shell.run("/MCOS/desktop")
   end
