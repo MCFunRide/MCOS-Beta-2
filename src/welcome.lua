@@ -22,7 +22,16 @@ if y == 5 then
  pass = read('*')
  graphix.centerWrite(6,"Repeat Password: ")
  rep = read('*')
- if pass == rep then
+ if pass == nil and rep ==  nil then
+  graphix.bgColor(colors.lightBlue)
+ graphix.center(1,"MCOS Beta "..version..": Done")
+ graphix.center(3,"The OS has been set up!")
+ graphix.center(5,"Press any key to reboot.")
+ os.pullEvent("key")
+ fs.delete("/startup")
+ shell.run("rename .startup startup")
+ os.reboot()
+ elseif pass == rep then
   
  os.loadAPI("/MCOS/sha256")
  main = sha256.sha256(pass)
