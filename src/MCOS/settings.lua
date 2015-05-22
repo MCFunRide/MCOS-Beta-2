@@ -29,6 +29,7 @@ shell.run("/MCOS/settings")
 else
 shell.run("/MCOS/settings")
 end
+end
 else
 graphix.centerWrite(3,"Old Password: ")
 old = read()
