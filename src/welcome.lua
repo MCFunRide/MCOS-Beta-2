@@ -21,8 +21,8 @@ if y == 5 then
  graphix.centerWrite(5,"Password: ")
  pass = read('*')
  graphix.centerWrite(6,"Repeat Password: ")
- repeat = read('*')
- if pass == repeat then
+ rep = read('*')
+ if pass == rep then
   
  os.loadAPI("/MCOS/sha256")
  main = sha256.sha256(pass)
