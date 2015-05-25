@@ -28,6 +28,15 @@ function centerWrite(yPos,sText)
   term.setCursorPos(x,yPos)
   write(sText)
 end
+
+
+function centerSlowPrint(yPos,sText)
+  local w, h = term.getSize()
+  local x = term.getCursorPos()
+  x = math.max(math.floor((w / 2) - (#sText / 2)), 0)
+  term.setCursorPos(x,yPos)
+  textutils.slowPrint(sText)
+end
  
 function totalClear()
   term.setCursorPos(1,1)
