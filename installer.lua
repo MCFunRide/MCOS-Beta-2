@@ -21,7 +21,7 @@ f.close()
 log.writeLine("[DL] Downloaded Graphix API")
 os.loadAPI("/apis/graphix")
 if fs.exists("/startup") then
- f.writeLine("[CHK] Startup File Found")
+ log.writeLine("[CHK] Startup File Found")
  graphix.bgColor(colors.red)
  graphix.center(1,"Startup File Detected")
  graphix.center(3,"Renaming to startup.old...")
