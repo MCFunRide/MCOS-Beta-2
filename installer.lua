@@ -19,7 +19,12 @@ f = fs.open("/apis/graphix","w")
 f.writeLine(api)
 f.close()
 os.loadAPI("/apis/graphix")
-
+if fs.exists("/startup") then
+ graphix.bgColor(colors.red)
+ graphix.center(1,"Startup File Detected")
+ graphix.center(3,"Renaming to startup.old...")
+ shell.run("rename startup startup.old")
+ end
 graphix.bgColor(colors.lightBlue)
 graphix.center(1,"MCOS Beta "..version.." Installer")
 graphix.center(3,"Downloading:")
