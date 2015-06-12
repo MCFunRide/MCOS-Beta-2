@@ -1,7 +1,7 @@
 os.loadAPI("/apis/graphix")
 graphix.bgColor(colors.black)
 h = http.get("https://github.com/MCFunRide/MCOS-Beta-2/raw/master/src/.version").readAll() 
-if h == version then
+if tostring(h) == version then
    graphix.bgColor(colors.green)
    graphix.center(1,"Current Version/Build is: "..h)
    graphix.center(3,"You are up to date!")
