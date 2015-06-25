@@ -61,16 +61,16 @@ while true do
   elseif x >= 1 and x <= 8 and y == h - 1 and menu == 1 then
     os.shutdown()
     menu = 0
-  elseif x <= 1 and x <= 8 and y == h - 2 and menu == 1 then
+  elseif x >= 1 and x <= 8 and y == h - 2 and menu == 1 then
     shell.run("/MCOS/settings")
     menu = 0
-  elseif x <= 1 and x <= 8 and y == h - 3 and menu == 1 then
+  elseif x >= 1 and x <= 8 and y == h - 3 and menu == 1 then
     shell.run("/MCOS/3rdParty/Gonow32/FileManager")
     menu = 0
-  elseif x <= 1 and x <= 8 and y == h - 4 and menu == 1 then
+  elseif x >= 1 and x <= 8 and y == h - 4 and menu == 1 then
     shell.run("/MCOS/editor")
     menu = 0
-  elseif x <= 1 and x <= 8 and y == h - 5 and menu == 1 then
+  elseif x >= 1 and x <= 8 and y == h - 5 and menu == 1 then
     shell.run("/MCOS/about")
   else
     drawDesktop()
