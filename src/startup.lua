@@ -11,7 +11,7 @@ OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTIO
 WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 --]]
 
-version = 2.1
+version = "3 Dev Release 1"
  
 os.loadAPI("/apis/graphix")
 graphix.bgColor(colors.cyan)
